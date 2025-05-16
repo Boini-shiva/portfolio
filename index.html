@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Developer Portfolio</title>
+    <!-- Tailwind CSS from jsdelivr -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- 
+    ===============================
+    STYLES.CSS - CSS STYLING SECTION
+    ===============================
+    -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light">
+    <!-- 
+    ===============================
+    INDEX.HTML - HTML STRUCTURE
+    ===============================
+    -->
+    
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="logo">Shiva's Portfolio</a>
+                
+                <div class="nav-links hidden md:flex">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#experience" class="nav-link">Education</a>
+                    <a href="#education" class="nav-link">Certifications</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <div class="theme-toggle mr-4">
+                        <div class="theme-toggle-circle"></div>
+                    </div>
+                    
+                    <div class="mobile-nav-toggle md:hidden">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center">
+                <div class="w-full lg:w-1/2 hero-text animate fadeInUp" style="animation-delay: 0.2s;">
+                    <h1>Hi, I'm <span class="text-blue-500">Shiva Darshan</span></h1>
+                    <div class="typed-text-wrapper">
+                        <span class="typed-text"></span>
+                    </div>
+                    <p class="mt-6">A dedicated Python developer with a passion for building clean, efficient, and scalable applications using modern tools and frameworks. With a solid foundation in web development, object-oriented programming, and database management.I focus on writing maintainable code and continuously enhancing my skills.</p>
+                    <div class="mt-8 flex flex-wrap">
+                        <a href="#contact" class="btn-primary mr-4 mb-4">Get In Touch</a>
+                        <a href="#projects" class="btn-secondary mb-4">View My Work</a>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 hero-image mt-10 lg:mt-0 animate fadeIn" style="animation-delay: 0.5s;">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E12AQH0zuF5zcWMTg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1725534404467?e=2147483647&v=beta&t=t2W6SprR1bgPGQCbwGLRq8w7tUoyQQIdTzHUPapgOMw" alt="Developer Image" class="mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center">
+                <div class="w-full lg:w-2/5 about-image mb-10 lg:mb-0">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="About Image" class="mx-auto">
+                </div>
+                <div class="w-full lg:w-3/5 about-text lg:pl-16">
+                    <h2 class="section-title">About Me</h2>
+                    <p>I am a dedicated Python developer with a strong focus on writing clean, maintainable code and creating powerful backend solutions. My expertise spans a wide range of Python tools and libraries, enabling me to build applications that are efficient, scalable, and user-centric.</p>
+                    <p>My journey with Python began during university, and since then I’ve built various projects including web apps, data-driven tools, and automation scripts. I'm committed to continuous learning and staying current with advancements in Python and its ecosystem.</p>
+
+                    
+                    <div class="about-info">
+                        <div class="about-info-item">
+                            <span>Name:</span> Boini Shiva Darshan
+                        </div>
+                        <div class="about-info-item">
+                            <span>Email:</span> shivamudhiraj1878@gmail.com
+                        </div>
+                        <div class="about-info-item">
+                            <span>Location:</span> Hyderabad,Telangana
+                        </div>
+                        <div class="about-info-item">
+                            <span>Available for:</span>Software Developer(Python FullStack Developer)
+                    </div>
+                    
+                    <a href="https://drive.google.com/file/d/172nHhZ-SVknmteIRD1rqLYhdgkw6ZJgN/view?usp=sharing" class="btn-primary mt-8">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title">My Skills</h2>
+                <p class="max-w-2xl mx-auto text-gray-500 dark:text-gray-400">I've worked with a variety of technologies and tools throughout my career. Here's an overview of my technical skills:</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code mr-2"></i>Programming Languages</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-desktop mr-2"></i>Frontend Technologies</h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML5 </span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>CSS3</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-server mr-2"></i>Backend Tech and FrameWorks</h3>
+                    
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Django</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Microsoft PowerBi</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+            
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-database mr-2"></i>Databases & Cloud</h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>SQL</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>PostgreSQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title">My Projects</h2>
+                <p class="max-w-2xl mx-auto text-gray-500 dark:text-gray-400">Here's a selection of projects I've worked on. Each represents different challenges and skills.</p>
+            </div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="SQL">Database(SQL)</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://web.dev/static/css/image/hero-css.png" alt="News App">
+                    </div>
+                    <div class="project-content">
+                        <h3>News App</h3>
+                        <p>A modern and user-friendly News App that delivers the latest headlines from various categories, keeping you informed in real-time. It features categorized news sections, a search function for specific topics, and a smooth user interface. Built with WEB TECHNOLOGIES[HTML,CSS,JS,API], the app fetches live news from trusted sources and offers a seamless experience.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JAVASCRIPT</span>
+                            <span class="project-tag">API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Boini-shiva/NewsApp.git" class="project-link"><i class="fas fa-link"></i> Live Demo</a>
+                            <a href="https://github.com/Boini-shiva/NewsApp.git" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://res.cloudinary.com/cloudinary-marketing/images/w_1540,h_847/f_auto,q_auto/v1649718594/Web_Assets/blog/working_with_css_22218720ab/working_with_css_22218720ab-jpg?_i=AA" alt="IMAGE FINDER">
+                    </div>
+                    <div class="project-content">
+                        <h3>Image Finder</h3>
+                        <p>A modern, responsive Image Finder Web App built using HTML, CSS, and JavaScript. This app lets users search for high-quality images using the Unsplash API.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JAVASCRIPT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Boini-shiva/ImageFinder.git" class="project-link"><i class="fas fa-link"></i> Live Demo</a>
+                            <a href="https://github.com/Boini-shiva/ImageFinder.git" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://cdn.prod.website-files.com/64a6f67b79a80fd9ff31ca7a/651861925d86eb8b1c8d90b0_651189e081964b9002b1e6d1_64c2586cc3eccac8b6a2e3a9_tb.png" alt="QR Code Generator">
+                    </div>
+                    <div class="project-content">
+                        <h3>QR Code Generator</h3>
+                        <p>This is a simple and responsive QR Code Generator built with HTML, CSS, and JavaScript. It lets users enter a URL or text and instantly generate a QR code using an external chart API.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">css</span>
+                            <span class="project-tag">JAVASCRIPT.io</span>
+                            <span class="project-tag">API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Boini-shiva/QR_Generator.git" class="project-link"><i class="fas fa-link"></i> Live Demo</a>
+                            <a href="https://github.com/Boini-shiva/QR_Generator.git" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://st.depositphotos.com/1518767/4298/i/450/depositphotos_42984315-stock-photo-css-against-futuristic-black-and.jpg" alt="Valentine’s Card - Django Web Application">
+                    </div>
+                    <div class="project-content">
+                        <h3>Valentine’s Card - Django Web Application</h3>
+                        <p>The Valentine’s Card project is a web-based application built using Django. It allows users to create and send personalized Valentine’s greeting cards. Users can customize messages, choose themes, and share cards digitally.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JAVASCRIPT</span>
+                            <span class="project-tag">SQLITE</span>
+                            <span class="project-tag">DJANGO</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Boini-shiva/Valentines-Card--DjangoWebApplication.git" class="project-link"><i class="fas fa-link"></i> Live Demo</a>
+                            <a href="https://github.com/Boini-shiva/Valentines-Card--DjangoWebApplication.git" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="python">
+                    <div class="project-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="BANK ACCOUNT MANAGEMENT SYSTEM">
+                    </div>
+                    <div class="project-content">
+                        <h3>BANK ACCOUNT MANAGEMENT SYSTEM</h3>
+                        <p>The Bank Account Management System is a Python-based application that simulates banking operations such as account creation, balance inquiry, deposits, withdrawals, fund transfers, and modifications to customer details. It follows an object-oriented approach (OOP), using a class Sbi to model a real-world banking system.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">PYTHON</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Boini-shiva/bank_account_management_system.git" class="project-link"><i class="fas fa-link"></i> Live Demo</a>
+                            <a href="https://github.com/Boini-shiva/bank_account_management_system.git" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="SQL">
+                    <div class="project-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkzu2mJFU0nayaprco2o9T1zR5TX2Q7wgNfg&s" alt="Employee Management System">
+                    </div>
+                    <div class="project-content">
+                        <h3>EMPLOYEE MANAGEMENT SYSTEM</h3>
+                        <p>This is a command-line-based Employee Management System developed in Python, using MySQL for the database. It allows you to manage employee records easily with options to add, update, delete, search, promote, and view all employees.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">PYTHON</span>
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag"> postgre SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Boini-shiva/EmployeeManagementSystem.git" class="project-link"><i class="fas fa-link"></i>Live Demo</a>
+                            <a href="https://github.com/Boini-shiva/EmployeeManagementSystem.git" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Experience Section
+    <section id="experience">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="max-w-2xl mx-auto text-gray-500 dark:text-gray-400">My professional journey as a software developer.</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - Present</div>
+                        <h3 class="timeline-title">Senior Software Engineer</h3>
+                        <div class="timeline-company">Tech Innovations Inc.</div>
+                        <p>Leading a team of developers to build scalable web applications using React, Node.js, and AWS. Implementing CI/CD pipelines and mentoring junior developers.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 - 2021</div>
+                        <h3 class="timeline-title">Full Stack Developer</h3>
+                        <div class="timeline-company">Digital Solutions Group</div>
+                        <p>Developed and maintained various client projects. Created RESTful APIs, implemented responsive UIs, and integrated third-party services.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2016 - 2018</div>
+                        <h3 class="timeline-title">Frontend Developer</h3>
+                        <div class="timeline-company">WebCraft Studios</div>
+                        <p>Built interactive user interfaces using modern JavaScript frameworks. Collaborated with designers to implement pixel-perfect designs and ensure cross-browser compatibility.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2014 - 2016</div>
+                        <h3 class="timeline-title">Junior Web Developer</h3>
+                        <div class="timeline-company">StartUp Hub</div>
+                        <p>Assisted in developing website features and fixing bugs. Learned various web technologies and best practices while collaborating with senior developers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <!-- education -->
+    <section id="experience">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Education</h2>
+                <p class="max-w-2xl mx-auto text-gray-500 dark:text-gray-400">My Educational journey.</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2024</div>
+                        <h3 class="timeline-title">Electronics And Communication Engineering(Graduation)</h3>
+                        <div class="timeline-company">Guru Nanak Institute of Technology</div>
+                        <h3 class="timeline-title">Percentage : 85</h3>
+                        <p>Graduated from Guru Nanak Institute of Technology (2020–2024) in Electronics And Communication Engineering, gaining a solid foundation in both hardware and software aspects of modern electronics.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 - 2020</div>
+                        <h3 class="timeline-title">Intermediate(MPC)</h3>
+                        <div class="timeline-company">Narayana Junior College</div>
+                        <h3 class="timeline-title">Percentage : 92.8</h3>
+                        <p>Completed Intermediate education with a focus on Mathematics, Physics, and Chemistry (MPC), building a strong analytical and problem-solving foundation.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2017 - 2018</div>
+                        <h3 class="timeline-title">10th Standard(SSC)</h3>
+                        <div class="timeline-company">SR Digi School</div>
+                        <h3 class="timeline-title">Percentage : 93</h3>
+                        <p>Attended SR Digi School (2017–2018), where I developed core knowledge in mathematics, science, and general studies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- certificates Section -->
+    <section id="education" class="bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title"> Certifications</h2>
+                <p class="max-w-2xl mx-auto text-gray-500 dark:text-gray-400">My professional And Tech certifications.</p>
+            </div>
+            
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-date">January 26th, 2025</div>
+                    <h3 class="education-degree">completion of PowerBI workshop</h3>
+                    <div class="education-school">Issued by: OfficeMaster</div>
+                    <p>on successful completion of PowerBI workshop
+                        Holder of this certificate can create Al-Powered
+                        interactive dashboards in PowerBI in under 30 mins.</p>
+                </div>
+                
+                <div class="education-card">
+                    <div class="education-date">07 April 2024 </div>
+                    <h3 class="education-degree">Python Course for Beginners With Certification: Mastering the Essentials </h3>
+                    <div class="education-school">Issued by : ScalerTopics</div>
+                    <p>In recognition of the completion of the tutorial: Python Course for Beginners With Certification: Mastering the Essentials .</p>
+                </div>
+                
+                <div class="education-card">
+                    <div class="education-date">26 September 2024 </div>
+                    <h3 class="education-degree">SQL for Beginners: Learn SQL using MySQL and Database Design Course </h3>
+                    <div class="education-school">Issued by : ScalerTopics</div>
+                    <p>In recognition of the completion of the tutorial: SQL for Beginners: Learn SQL using MySQL and Database Design Course .</p>
+                </div>
+                
+                <div class="education-card">
+                    <div class="education-date">February 14, 2024
+                    </div>
+                    <h3 class="education-degree">Python 101 for Data Science</h3>
+                    <div class="education-school">Issued by:
+                        Cognitive Class</div>
+                    <p>
+                        successfully completed and received a passing grade in
+                        Python 101 for Data Science .A course on cognitiveclass.ai,
+                        Powered by IBM Developer Skills Network.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="max-w-2xl mx-auto text-gray-500 dark:text-gray-400">Feel free to contact me for any work opportunities or just to say hello!</p>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <p>shivamudhiraj1878@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Phone</h3>
+                        <p>+91 8008601392</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Location</h3>
+                        <p>Hyderabad,Telangana</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="flex flex-wrap -mx-2">
+                        <div class="w-full md:w-1/2 px-2 mb-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                <div class="error-message" id="nameError">Please enter your name</div>
+                            </div>
+                        </div>
+                        
+                        <div class="w-full md:w-1/2 px-2 mb-4">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                <div class="error-message" id="emailError">Please enter a valid email</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group mb-4">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                        <div class="error-message" id="subjectError">Please enter a subject</div>
+                    </div>
+                    
+                    <div class="form-group mb-4">
+                        <textarea class="form-control" id="message" placeholder="Your Message" required></textarea>
+                        <div class="error-message" id="messageError">Please enter your message</div>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary w-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container mx-auto px-4">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Shiva darshan . All rights reserved.</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Boini-shiva" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/boini-shiva-darshan-378234240" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/@shiva_419" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/
+                    shiva_mudhiraj1878/" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- 
+    ===============================
+    SCRIPT.JS - JAVASCRIPT FUNCTIONALITY
+    ===============================
+    -->
+    <script src="script.js"></script>
+</body>
+</html>
